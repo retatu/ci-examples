@@ -33,3 +33,12 @@ jobs:
         with:
           push: true
           tags: retatu/ci-examples:latest
+  sonarqube:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          go-version: 1.15
+      - run: go test -coverprofile=coverage.out
+      
