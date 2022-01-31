@@ -41,4 +41,9 @@ jobs:
         with:
           go-version: 1.15
       - run: go test -coverprofile=coverage.out
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrest.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrest.SONAR_TOKEN }}
       
