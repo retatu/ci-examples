@@ -46,5 +46,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          sonar.login: retatu
+          sonar.login: ${{ secrets.SONAR_TOKEN }}
       
