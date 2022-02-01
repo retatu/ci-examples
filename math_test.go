@@ -18,3 +18,27 @@ func TestMulti(t *testing.T) {
 	}
 
 }
+func TestSub(t *testing.T) {
+	total := sub(5, 5)
+
+	if total != 0 {
+		t.Errorf("Resultado Soma inválido. Result: %d Expected: %d", total, 25)
+	}
+
+}
+func Test1(t *testing.T) {
+	total := teste1(5, 5)
+
+	if total != 0 {
+		t.Errorf("Resultado Soma inválido. Result: %d Expected: %d", total, 25)
+	}
+
+}
+func Test2(t *testing.T) {
+	total := teste2(5, 5)
+
+	if total != 0 {
+		t.Errorf("Resultado Soma inválido. Result: %d Expected: %d", total, 25)
+	}
+
+}
