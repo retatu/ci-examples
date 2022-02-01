@@ -22,7 +22,3 @@ func sub(a int, b int) int {
 func teste1(a int, b int) int {
 	return a - b
 }
-
-func teste2(a int, b int) int {
-	return a - b
-}
