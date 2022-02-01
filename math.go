@@ -25,3 +25,11 @@ func teste1(a int, b int) int {
 func teste2(a int, b int) int {
 	return a - b
 }
+
+func teste3(a int, b int) int {
+	return a - b
+}
+
+func teste4(a int, b int) int {
+	return a - b
+}
